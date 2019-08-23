@@ -30,7 +30,7 @@ time.sleep(2)
 
 iniciarZero = True
 
-file = open("storage/emulated/0/qpython/projects3/TOPGAME/Database/dadosGame.txt",'r')
+file = open("./Database/dadosGame.txt",'r')
 jogoSalvo = eval(file.readline().rstrip())
 qtdJogos  = int(file.readline())
 file.close()
@@ -46,7 +46,7 @@ if(jogoSalvo == True):
         print("\nResgatando o progresso...\n")
         time.sleep(1)
 
-        file = open("storage/emulated/0/qpython/projects3/TOPGAME/Database/Dados_Salvos/"+str(jogoSalvo),'r')
+        file = open("./Database/Dados_Salvos/"+str(jogoSalvo),'r')
         arquivo = file.readlines()
         file.close()
         

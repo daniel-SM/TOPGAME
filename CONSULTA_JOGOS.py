@@ -2,7 +2,7 @@ def consultaJogos(qtdJogos):
     
     arquivo = 1
     while(arquivo != 0) and (arquivo <= qtdJogos) and (qtdJogos > 0):
-        file = open("storage/emulated/0/qpython/projects3/TOPGAME/Database/Dados_Salvos/"+str(arquivo),'r')
+        file = open("./Database/Dados_Salvos/"+str(arquivo),'r')
         
         print("\nN° do jogo salvo:",arquivo)
         print("Status:",file.readline().rstrip())

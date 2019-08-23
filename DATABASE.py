@@ -1,7 +1,7 @@
 
 def setDataBase(saving,qtdJogos,numJogo,titulo,nome,fase,life,lifeRegen,ataque,defesa,magia,moedas,itens,lifeInim,ataqueInim,defesaInim):
     
-    file = open("storage/emulated/0/qpython/projects3/TOPGAME/Database/Dados_Salvos/"+str(numJogo),'w')
+    file = open("./Database/Dados_Salvos/"+str(numJogo),'w')
     
     file.write(str(titulo) + "\n")
     file.write(str(nome) + "\n")
@@ -22,7 +22,7 @@ def setDataBase(saving,qtdJogos,numJogo,titulo,nome,fase,life,lifeRegen,ataque,d
 ## ---------//-----------//------
     # Deixando progresso visível
     
-    file = open("storage/emulated/0/qpython/projects3/TOPGAME/Database/dadosGame.txt",'w')
+    file = open("./Database/dadosGame.txt",'w')
     file.write(str(saving) + "\n")
     file.write(str(qtdJogos))
     file.close()
